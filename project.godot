@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "PerlinWaterGenerator",
+"language": "GDScript",
+"path": "res://script/PerlinWaterGenerator.gd"
+} ]
+_global_script_class_icons={
+"PerlinWaterGenerator": ""
+}
+
+[application]
+
+config/name="PerlinWaterGenerator"
+run/main_scene="res://Node2D.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=900
+window/size/resizable=false
+window/dpi/allow_hidpi=true
+window/vsync/use_vsync=false
+
+[physics]
+
+common/enable_pause_aware_picking=true
